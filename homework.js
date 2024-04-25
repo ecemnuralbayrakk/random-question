@@ -30,7 +30,6 @@ function shuffleTheQuestions(array) {
   return shuffle(newArrayInArray);
 }
 
-
 function shuffle(array) {
   let currentIndex = array.length;
   // While there remain elements to shuffle...
@@ -47,9 +46,11 @@ function shuffle(array) {
   return array;
 }
 const delay = (ms) => {
-  const startPoint = new Date().getTime()
-  while (new Date().getTime() - startPoint <= ms) {/* wait */}
-}
+  const startPoint = new Date().getTime();
+  while (new Date().getTime() - startPoint <= ms) {
+    /* wait */
+  }
+};
 function askQuestion(array) {
   let wrongAnswer = 0;
   let questionText = array[0];
